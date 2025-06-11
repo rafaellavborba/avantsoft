@@ -1,0 +1,50 @@
+.loginPage {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background: linear-gradient(135deg, #48C3F0, #48C97C);
+}
+
+.loginContent {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-height: 80%;
+    height: fit-content;
+    width: 85%;
+    max-width: 400px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+}
+
+.title{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.inputContent {
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.errorMessage {
+    color: red;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: -20px;
+    font-weight: 500;
+}
+
+@media (min-width: 1024px) {
+    .loginContent{
+        padding: 40px;
+    }
+    .title {
+        margin-bottom: 24px;
+    }
+}

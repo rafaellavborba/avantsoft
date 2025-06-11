@@ -1,0 +1,36 @@
+@import url('./container.scss');
+
+html,
+body {
+    height: 100dvh;
+    width: 100dvw;
+    max-width: 100vw;
+    overflow-x: hidden;
+    color: #000;
+    letter-spacing: 1px;
+    margin: 0;
+    font-size: 1rem;
+}
+
+#root {
+    height: 100dvh;
+    width: 100dvw;
+}
+
+input {
+    border: none;
+    border-radius: 30px;
+    box-shadow: 4px 4px 4px 0px #0003;
+    color: black;
+    width: 100%;
+    height: 55px;
+}
+
+button {
+    cursor: pointer;
+    scale: 1;
+    &:hover{
+        scale: 1.02;
+        transition: all ease-in-out 0.3s;
+    }
+}

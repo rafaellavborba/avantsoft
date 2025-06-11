@@ -1,0 +1,41 @@
+.inputWithIcon {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  
+  input {
+    flex: 1;
+    padding-right: 40px;
+    margin-top: 4px;
+  }
+
+  .eyeButton {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #555;
+    display: flex;
+    align-items: center;
+  }
+}
+.label{
+    color: white;
+  }
+
+  .error {
+    input{
+        border:2px solid red;
+    }
+    .errorMessage{
+        position: absolute;
+        bottom: -18px;
+        left: 10px;
+        color: red;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+  }
