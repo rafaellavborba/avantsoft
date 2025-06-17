@@ -1,0 +1,24 @@
+.card {
+    background-color: rgba(72, 201, 124, 0.3);
+    padding: 14px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 100px;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    scale: 1;
+    transition: all ease-in-out 0.3s;
+    &:hover{
+        scale: 1.02;
+        transition: all ease-in-out 0.3s;
+    }
+}
+.cardtext {
+    font-size: 0.8rem;
+}
+.cardvalue {
+    font-weight: bold;
+    font-size: 1rem;
+}

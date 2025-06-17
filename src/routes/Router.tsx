@@ -3,6 +3,7 @@ import { useAuth } from '../hooks/useAuth'
 import LoginPage from '../pages/LoginPage'
 import DashboardPage from '../pages/DashboardPage'
 import type { JSX } from 'react'
+import NewClientPage from '../pages/NewClientPage'
 
 const PrivateRoute = ({ children }: { children: JSX.Element }) => {
   const { isAuthenticated } = useAuth()
@@ -17,6 +18,11 @@ export default function Router() {
         <Route path="/dashboard" element={
           <PrivateRoute>
             <DashboardPage />
+          </PrivateRoute>
+        } />
+        <Route path="/novo" element={
+          <PrivateRoute>
+            <NewClientPage />
           </PrivateRoute>
         } />
         <Route path="*" element={<Navigate to="/dashboard" />} />

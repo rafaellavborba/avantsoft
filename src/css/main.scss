@@ -10,11 +10,12 @@ body {
     letter-spacing: 1px;
     margin: 0;
     font-size: 1rem;
+    background-color: #f9f9f9;
 }
 
 #root {
-    height: 100dvh;
-    width: 100dvw;
+    height: 100%;
+    width: 100%;
 }
 
 input {
@@ -29,6 +30,7 @@ input {
 button {
     cursor: pointer;
     scale: 1;
+    transition: all ease-in-out 0.3s;
     &:hover{
         scale: 1.02;
         transition: all ease-in-out 0.3s;

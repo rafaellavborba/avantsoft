@@ -1,0 +1,19 @@
+.cardSection {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.graphSection {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+     .graphSection{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}

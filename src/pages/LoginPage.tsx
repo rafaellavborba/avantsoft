@@ -1,8 +1,8 @@
 import { useAuth } from '../hooks/useAuth'
 import { useNavigate } from 'react-router-dom'
 import styles from './styles/LoginPage.module.scss';
-import InputDefault from '../components/InputDefault';
-import SubmitButton from '../components/SubmitButton';
+import InputDefault from '../components/default/InputDefault';
+import SubmitButton from '../components/default/SubmitButton';
 import { useState } from 'react';
 export default function LoginPage() {
   const { login } = useAuth()

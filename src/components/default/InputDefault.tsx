@@ -10,6 +10,7 @@ interface Props {
   nameProps: string;
   typeProps?: string;
   error?: boolean;
+  stylesProps?: any;
 }
 
 export default function InputDefault({
@@ -19,7 +20,8 @@ export default function InputDefault({
   handleChange,
   nameProps,
   typeProps = 'text',
-  error = false
+  error = false,
+  stylesProps = null
 }: Props) {
   const [showPassword, setShowPassword] = useState(false);
 
@@ -28,7 +30,7 @@ export default function InputDefault({
 
   return (
     <div className={`${styles.inputWrapper} ${error ? styles.error : ''}`}>
-      <label className={styles.label} htmlFor={nameProps}>{labelProps}</label>
+      <label className={styles.label} style={stylesProps} htmlFor={nameProps}>{labelProps}</label>
       <div className={styles.inputWithIcon}>
         <input
           type={inputType}
