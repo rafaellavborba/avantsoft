@@ -11,7 +11,7 @@ A React-based application to manage clients, track their purchase data, and visu
   - Frequency of purchases
   - Average sale value
   - A missing alphabet letter from their name
-- 🔐 **Simple Authentication**: Basic login system to protect routes.
+- 🔐 **Simple Authentication**: Basic login system to protect routes. (user: admin, password: admin)
 - 📊 **Sales Statistics**:
   - Line chart showing total sales per day
   - Visual highlight for:
