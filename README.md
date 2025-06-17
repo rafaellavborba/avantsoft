@@ -28,6 +28,10 @@ A React-based application to manage clients, track their purchase data, and visu
 - **Sass (SCSS)** for styling
 - **Recharts** for charts and statistics
 
+## 📄 License
+
+This project is licensed under the MIT License.
+
 ## 📦 Installation
 
 ```bash
